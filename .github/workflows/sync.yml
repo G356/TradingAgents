@@ -24,8 +24,8 @@ jobs:
       - name: Hard Sync with Upstream
         run: |
           # 配置本地 git 用户信息
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@://github.com"
+          git config --global user.name "mark"
+          git config --global user.email "wxb99356@gmail.com"
           
           # 动态获取你当前 Fork 的上游原作者仓库地址
           UPSTREAM_URL=$(gh repo view ${{ github.repository }} --json parent --jq '.parent.url')
